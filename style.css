@@ -1,0 +1,70 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ffd000, #ff5100);;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    color: rgb(1, 77, 1);
+    margin-bottom: 20px;
+}
+.calculator{
+    background: rgb(167, 230, 154);
+    padding:  20px;
+    border-radius:  10px;
+    width: 600px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2) ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+input, select{
+    padding: 10px;
+    margin: 5px;
+    border:1px solid #ccc ;
+    border-radius: 5px;
+}
+button{
+    padding: 10px 20px;
+    margin: auto;
+    background : repeating-linear-gradient(to right, rgb(243, 117, 155), rgb(187, 5, 60));
+    color: #000000;
+    border: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+button:hover{
+    background: #9ea8b1;
+}
+.ops button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    background: linear-gradient(to right, #5de674, #05f82d);
+    
+}
+.ops button:hover{
+    background: #1a9bbe;
+}
+
+#expr, #result {
+    font-size: 20px;
+    margin-top: 15px;
+}
+#result {
+    font-weight: bold;
+    color: #222;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATRICE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🧮 MINI CALCULATRICE</h1>
+    <div class="calculator">
+      <input id="a" type="number" placeholder="number a" />
+      <input id="b" type="number" placeholder="number b" />
+
+      <div class="ops">
+        <button id="add" data-op="+">+</button>
+        <button id="sub" data-op="-">-</button>
+        <button id="mul" data-op="*">x</button>
+        <button id="div" data-op="/">÷</button>
+      </div>
+      <button id="calcul">Calculer</button>
+      <button id="reset">Réintitialiser</button>
+
+      <p id="expr">_</p>
+      <p id="result">0</p>
+      <p id="error" class="error"></p>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
